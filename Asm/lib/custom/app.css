@@ -1,0 +1,23 @@
+.slider-custom{
+    height: 410px;
+}
+.slider-custom img{
+    object-fit: cover;
+}
+
+footer{
+    background-color: #192041;
+    color: white;
+}
+.nav{
+    background-color: #192041;
+    color: white;
+    height: 90px;
+    
+}
+.nav-item{
+    margin-top: 10px;
+}
+.justify-content-left{
+    margin-top: 10px;
+}

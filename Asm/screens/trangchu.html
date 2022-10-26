@@ -1,0 +1,52 @@
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner slider-custom">
+      <div class="carousel-item active">
+        <img src="https://caodang.fpt.edu.vn/wp-content/uploads/xBanner1-1.png.pagespeed.ic.exagkVtqz9.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://apolyorg.files.wordpress.com/2019/04/xbanner-trang-lien-he-moi.jpg.pagespeed.ic_.fqvwhe7pcx.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://caodang.fpt.edu.vn/wp-content/uploads/Banner-tang-1trieu.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="container">
+  <h3>Danh sách môn học</h3>
+<!--<div class="row">
+    <div class="col-3 mb-3" ng-repeat="sub in subjects">
+        <div class="card">
+            <img src="lib/images/logos/{{sub.Logo}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{sub.Name}}</h5>
+              <a href="#!/kiem-tra/{{sub.Id}}" class="btn btn-primary justify-content-center d-flex">Bài kiểm tra</a>
+            </div>
+        </div>
+    </div>
+</div>  -->
+<div class="row">
+  <div class="col-3 mb-3" ng-repeat="sub in subjects" dir-paginate="val in data|orderBy:sortKey:reverse|filter:search|itemsPerPage:2">
+      <div class="card">
+          <img src="lib/images/logos/{{sub.Logo}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{sub.Name}}</h5>
+            <a href="#!/kiem-tra/{{sub.Code}}" class="btn btn-primary justify-content-center d-flex">Bài kiểm tra</a>
+          </div>
+      </div>
+  </div>
+</div>
+</div>

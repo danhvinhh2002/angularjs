@@ -1,0 +1,33 @@
+   
+   <div class="container">
+       <hr>
+<ul>
+
+       <li><h3>Số câu hỏi : {{questions.length}} </h3>
+    </li>
+    <li><h3>Câu câu đã trả lời : {{countAnswers()}}</h3>
+    </li>
+       
+        
+</ul>
+<hr>
+<h4>Danh sách câu hỏi</h4>
+<div class="row">
+    <div class="col-8  offset-2 mt-3" ng-repeat="question in questions">
+        <h3>{{question.Text}}</h3>
+        <div class="form-check" ng-repeat="asw in question.Answers">
+            <input ng-model="radioChange" ng-change="chooseAnswer(question.Id, asw.Id)" 
+            class="form-check-input" type="radio" name="{{question.Id}}" id="asw_{{asw.Id}}">
+            <label class="form-check-label" for="asw_{{asw.Id}}">
+                {{asw.Text}}
+            </label>
+          </div>
+        
+    </div>
+</div>
+<br>
+<div class="d-grid gap-2 d-md-flex justify-content-md-center">
+    <button class="btn btn-primary me-md-2" ng-disabled="isSubmit" type="button" ng-click="submitExercise()">Nộp bài</button>
+</div>
+<hr></div>
+<br>

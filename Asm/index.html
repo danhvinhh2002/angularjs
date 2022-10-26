@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/custom/app.css">
+
+    
+</head>
+<script
+    src="https://kit.fontawesome.com/29b41ee1c8.js"
+    crossorigin="anonymous"
+  ></script>
+<body ng-app="asm1">
+  <nav class="navbar navbar-expand-lg navbar-light"  style="background-color:#192041;">
+    <div class="container">
+      <img src="https://caodang.fpt.edu.vn/wp-content/uploads/logo-3.png" alt="" margin="20px">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#!/"  style="color: white;"> <i class="fas fa-home"></i> Trang chủ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#!/khoa-hoc" style="color: white;"> <i class="fas fa-list"></i> Khóa học</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#!/gioi-thieu"  style="color: white;"> <i class="fas fa-book-open"></i> Giới thiệu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#!/lien-he"  style="color: white;"><i class="fas fa-phone"></i> liên hệ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#!/hoi-dap"  style="color: white;"><i class="fas fa-question"></i> Hỏi đáp</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="color: white;">
+              <i class="fas fa-user" ></i> Tài khoản
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#!/dang-nhap">Đăng nhập</a></li>
+              <li><a class="dropdown-item" href="#!/dang-ky">Đăng kí</a></li>
+              <li><a class="dropdown-item" href="#">Đổi mật khẩu</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</nav>
+        <div ng-view>
+        </div>
+
+    </div>
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <img src="https://caodang.fpt.edu.vn/wp-content/uploads/logo-3.png" width="300">
+              <br><br><br>
+              <h5 class="set-title">THÔNG TIN LIÊN HỆ</h5>
+              <br>
+              <p>Điện thoại: (024) 7300 1955</p>
+              <br>
+              <p>Email: caodang@fpt.edu.vn</p>
+            </div>
+            <div class="col-4">
+              <h5 class="set-title">HỆ THỐNG VĂN PHÒNG TUYỂN SINH</h5>
+              <br>
+              <p>
+                Cơ sở Hà Nội <br>
+                <i class="fas fa-map set-title"></i> Văn phòng Tuyển sinh: Tòa nhà FPT Polytechnic, Phố Trịnh Văn Bô, Nam Từ Liêm, Hà Nội <br>
+                <i class="fas fa-phone-alt set-title"></i> (024) 8582 0808
+              </p>
+              <p>
+                Cơ sở Đà Nẵng <br>
+                <i class="fas fa-map set-title"></i> Văn phòng Tuyển sinh: Số 137 Nguyễn Thị Thập, Phường Hòa Minh, Quận Liên Chiểu, TP. Đà Nẵng <br>
+                <i class="fas fa-phone-alt set-title"></i> (0236) 3710 999
+              </p>
+              <p>
+                Cơ sở Cần Thơ <br>
+                <i class="fas fa-map set-title"></i> Văn phòng Tuyển sinh: Số 288, Nguyễn Văn Linh, phường An Khánh, quận Ninh Kiều, Tp. Cần Thơ <br>
+                <i class="fas fa-phone-alt set-title"></i> 0901759222
+              </p>
+            </div>
+            <div class="col-4">
+              <h5></h5>
+              <br>
+              <br>
+              <p>
+                Cơ sở Hồ Chí Minh <br>
+                <i class="fas fa-map set-title"></i> Văn phòng Tuyển sinh: 778/B1 Nguyễn Kiệm, P.4, Q. Phú Nhuận, TP. Hồ Chí Minh <br>
+                <i class="fas fa-phone-alt set-title"></i> 028 62523434/0901 660 002
+              </p>
+              <p>
+                Cơ sở Tây Nguyên <br>
+                <i class="fas fa-map set-title"></i> Văn phòng Tuyển sinh: Tổ dân phố 8, phường Tân An, TP. Buôn Mê Thuột, Đắk Lắk <br>
+                <i class="fas fa-phone-alt set-title"></i> (0262) 355 5678/0913493777
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular-route/angular-route.min.js"></script>
+    <script src="lib/db/Subjects.js"></script>
+    <script src="lib/db/Quizs/ADAV.js"></script>
+    <script src="./pages/HomeController.js"></script>
+    <script src="./pages/TestProcessController.js"></script>
+    <script src="./pages/khoahocController.js"></script>
+    <script src="./pages/dangkiConTroller.js"></script>
+    <script>
+        var subjectApiUrl="http://localhost:3000/subjects";
+        var app = angular.module('asm1', ['ngRoute']);
+        app.config(function($routeProvider){
+            $routeProvider
+            .when("/", {
+                templateUrl: "screens/trangchu.html",
+                controller: "HomeController"
+            })
+            .when("/kiem-tra/:subjectId", {
+                templateUrl: "screens/kiem-tra.html",
+                controller: "TestProcessController"
+            })
+            .when("/khoa-hoc", {
+                templateUrl: "screens/khoa-hoc.html",
+                controller:"khoahocController"
+               
+            })
+            .when("/gioi-thieu", {
+                templateUrl: "screens/gioi-thieu.html",
+              
+               
+            })
+            .when("/hoi-dap", {
+                templateUrl: "screens/hoi-dap.html",
+              
+               
+            })
+            .when("/lien-he", {
+                templateUrl: "screens/lien-he.html",
+                
+               
+            })
+            .when("/dang-nhap", {
+                templateUrl: "screens/dang-nhap.html",
+                controller:"loginCtrl"
+               
+            })
+            .when("/dang-ky", {
+                templateUrl: "screens/dang-ky.html",
+                controller:"dangkiConTroller"
+               
+            })
+            .otherwise({
+                template: "<h2>Đường dẫn không tồn tại</h2>"
+            })
+        });
+
+        app.controller("HomeController",['$scope','$http',HomeController]  );
+        app.controller("TestProcessController",TestProcessController );
+        app.controller("khoahocController",khoahocController );
+        app.controller("dangkiConTroller", dangkiConTroller);
+        
+    </script>
+</body>
+</html>

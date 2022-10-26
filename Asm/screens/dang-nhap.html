@@ -1,0 +1,27 @@
+
+<div class="container"><br>
+  <div class="col-6 offset-3">
+    <h2 class="justify-content-center d-flex">Login</h2>
+    <form name="formLogin">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input name="txtUser" ng-model="studentUniver.username" type="text" class="form-control" required maxlength="30" minlength="4" id="username" aria-describedby="emailHelp">
+            <small id="username" ng-show="formLogin.txtUser.$error.required"  class="form-text text-danger">Vui lòng tên tài khoản</small>
+           
+         </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input name="txtPass" ng-model="studentUniver.password" type="password" class="form-control" required maxlength="30" minlength="4" id="password" aria-describedby="emailHelp">
+            <small id="password" ng-show="formLogin.txtPass.$error.required"  class="form-text text-danger">Vui lòng nhập mật khẩu</small>
+                        
+        </div>
+                <div class="mb-3 row">
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-primary" ng-click="login()">Đăng nhập</button>
+                        
+                    </div>
+                </div>
+              </form>
+            </div>
+        </div>
+   
